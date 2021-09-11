@@ -1,0 +1,275 @@
+<!doctype html>
+<html><head><title>my hotel website</title>
+<style>
+
+body
+{background:grey;
+}
+h1
+{
+background-image:linear-gradient(black,purple);
+color:white;
+padding:15px;
+font-family:comic sans ms;
+}
+h2
+{background-color:blue;
+color:white;
+padding:5px;
+font-family:trebuchet ms;
+}
+.navigation
+{list-style-type:none;
+}
+div ul li {display:inline-block;
+
+}
+div ul li a{color:white;
+text-decoration:none;
+background-image:linear-gradient(black,brown);
+color:white;
+padding:20px 120px;
+margin:2px;
+border-radius:10px;}
+.hd{background-image:linear-gradient(black,brown);
+color:white;
+padding:20px 120px;
+margin:2px;
+border-radius:10px;}
+
+a:hover{color:lightgreen;
+font-family:comic sans ms;}
+a:active{color:red;
+cursor:wait;}
+
+.size{text-size:30px;
+height:100px;
+width:400px;}
+span{font-size:20px;
+color:brown;}
+
+header, form{
+	padding: 2em 5em;}
+
+input[type="radio"]{margin-bottom:18px;}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="tel"],
+
+textarea,
+button,
+select{
+		padding: 12px;
+		font-size: 14px;
+		border: 1px solid $border;
+		width: 100%;
+		margin-bottom: 18px;
+		color: #888;
+		font-family: 'Lato', 'sans-serif';
+		font-size: 16px;
+		font-weight: 300;
+		@include border-radius(2px);
+		@include transition(all .3s);}
+
+	select{
+		cursor: context-menu;
+	}}
+	
+button{
+  cursor: pointer;
+  background-color: $brand-color;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+  float: right;
+  &:hover{
+    background-color: lighten($brand-color, 5%);
+  }}
+	label{
+		
+     width: 60%;
+     color: yellow;
+		padding: 4px ;
+		font-weight: 400;
+		
+     background-color: brown;}
+.hd:hover{cursor:none;
+background:brown;
+color:yellow;}
+</style>
+
+<script>
+function myFunction(){
+alert("PAYMENT IS BEING MADE");
+confirm("ARE YOU SURE?");}
+
+</script>
+
+</head>
+<body>
+<h1><b><center>ENTER YOUR DETAILS HERE</center></b></h1>
+<div ><ul class="navigation">
+<li><a href="first page.html">HOME</a></li>
+<li><a href="index hotel.html">SPECIALS</a></li>
+<li class="hd">BOOKING</li>
+<li><a href="about.html">CONTACT US</a></li>
+</ul></div>
+
+
+<form action="data.txt" name="fm" id="form">
+  <div class="form-group">
+    <h2>Booking & contact</h2>
+   
+ <div class="controls">
+      <input type="text"required id=" firstname" name="username" placeholder="First name"  pattern="[A-Za-z]{1,32}" style="margin-left:5px;" >
+ </div>
+
+ <div>
+      <input type="text"required id=" last name" name="last name" placeholder="Last name" pattern="[A-Za-z]{1,32}" style="margin-left:5px;">
+ </div>
+
+ <div>
+      <input type="email"required id="email" name="email" placeholder="Email" style="margin-left:5px;" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+ </div>       
+ 
+ <div>
+      <input type="tel" required id="phone" name="phone" va placeholder="Contact number" pattern="[0-9]{10}" style="margin-left:5px;">
+ </div>
+
+ <div>  
+       <input type="number"required id="adhaar number" name="adhaar number" placeholder="Adhaar number" style="margin-left:5px;" pattern"[0-9]">   
+ </div>          
+
+ <div>
+        <input type="text" id="adress" name="adress" placeholder="Adress" style="margin-left:5px;">
+ </div>          
+     
+ <div> 
+        <input type="text" id="city" name="city" placeholder="City" style="margin-left:5px;" >
+ </div>         
+       
+  <div>     
+        <input type="text" id="country" name="country" placeholder="Country" style="margin-left:5px;" >
+  </div>
+  
+
+  <div>
+    <h2 class="heading">Details</h2></div>
+   
+ <div>   <label for="arrive" >Arrival date</label>
+    <input type="date"required id="arrive" name="arrive" style="margin-left:5px;">
+     
+      </div>
+      
+     <div>   <label for="arrival" >Arrival time</label>
+    <input type="time"required id="arrival" name="arrival" style="margin-left:5px;">
+     
+      </div>      
+     
+ <div>  <label for="depart">Departure date</label>
+        <input type="date"required id="depart" name="depart" style="margin-left:5px;" >
+      
+      </div>  
+         
+ <div>       <label for="departure">Departure time</label>
+        <input type="time"required id="departarture" name="departure" style="margin-left:5px;" >
+ 
+      </div>  
+   
+     <div><label for="night-stay">Night stay?</label>
+        <input type="radio" name"night-stay" style="margin-left:5px;">
+        
+      </div>
+
+    <div> <label for="rooms">Number of rooms</label>
+        <input type="number"required name="rooms" min="1" max="5" placeholder="1-5" pattern"[1-5]{1}" style="margin-left:5px;">
+       
+      </div>
+  
+      <div><h4>PRICE WILL VARY ACCORDING TO THE VIEW<h4>  </div>
+<div>
+<label>VIEW  </label>
+        <select name="view" style="margin-left:5px;">
+          <option value="blank"selected></option>
+          <option value="1">City view</option>
+          <option value="2">Beach view</option>
+          <option value="3">Hotel view</option>
+        </select>
+        
+      </div>      
+    
+    
+    <div><label>SUITE </label>
+      <select name="suite" style="margin-left:5px;">
+     <option value="blank"selected></option>
+        <option value="family">Family suite</option>
+        <option value="deluxe">Deluxe suite</option>
+        <option value="honeymoon suite">Honeymoon suite</option>
+        <option value="meeting">Meeting suite</option>
+        <option value="economical">Economical suite</economical>
+      </select>
+      
+     </div>    
+
+<div>
+<label>SPECIAL SUITE </label>
+        <select name="special" style="margin-left:5px;">
+          <option value="blank"selected>None</option>
+          <option value="maria">Presidential suite</option>
+          <option value="shoot">Cypress suite</option>
+          <option value="king">King's suite</option>
+        </select>
+       
+      </div> 
+
+    <div><label>FOOD SERVICE </label>
+      <select name="food" style="margin-left:5px;">
+        <option value="blank"></option>
+        <option value="included"selected>Included</option>
+        <option value="unincluded">Unincluded</option>
+      </select>
+   
+       </div>
+      
+
+     <div>
+            <h2>Checkout</h2>
+
+            <form>
+              <label>Card Number</label>
+              <input type="number"required placeholder="Debit card number" style="margin-left:5px;" pattern="[0-9]">
+
+                <div>
+                  <label>Expiration Date</label>
+                  <input type="text"required placeholder="MM YY" style="margin-left:5px;" pattern="[0-1][0-9]-[0-9][0-9]">
+                </div>
+
+                <div>
+                  <label>CVV Code</label>
+                  <input type="password"required placeholder="•••" minlength="3" maxlength="3" size="3" style="margin-left:5px;" pattern="[0-9]{3}">
+                </div>
+              
+
+              <label>Owner</label>
+              <input type="text"required placeholder="Name on the card" style="margin-left:5px;" pattern="[A-Za-z]{1,64}">
+            </form>
+
+            <div class="terms">							
+              <input type="checkbox"required checked>
+                I accept all <a href="about.html">Terms and Conditions</a> for booking this room.
+              </p>
+            </div></form>
+   
+      <div>
+        <p class="info-text">Please describe your needs e.g. Extra beds, children's cots<br>
+          <textarea name="comments"  id="comments" class="size" placeholder="Add text here"></textarea>
+         </p>
+          </div>
+            <button type="submit" value="Submit"  onclick="myFunction()" / >Submit</button>
+      </div>  
+  </div> 
+</form></body></html>
